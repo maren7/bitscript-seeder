@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2011 The Bitcoin developers
+// Copyright (c) 2011 The Bitscript developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,7 +19,7 @@ extern bool fTestNet;
 extern unsigned short nDefaultP2Port;
 static inline unsigned short GetDefaultPort(const bool testnet = fTestNet)
 {
-    return nDefaultP2Port ? nDefaultP2Port : (testnet ? 18333 : 8333);
+    return nDefaultP2Port ? nDefaultP2Port : (testnet ? 17333 : 7333);
 }
 
 //

@@ -1,8 +1,8 @@
-// Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2009-2012 The Bitscript developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef BITCOIN_NETBASE_H
-#define BITCOIN_NETBASE_H
+#ifndef BITSCRIPT_NETBASE_H
+#define BITSCRIPT_NETBASE_H
 
 #include <string>
 #include <vector>

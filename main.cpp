@@ -9,7 +9,7 @@
 #include <getopt.h>
 #include <atomic>
 
-#include "bitcoin.h"
+#include "bitscript.h"
 #include "db.h"
 
 using namespace std;
@@ -40,7 +40,7 @@ public:
   CDnsSeedOpts() : nThreads(96), nDnsThreads(4), ip_addr("::"), nPort(53), nP2Port(0), nMinimumHeight(0), mbox(NULL), ns(NULL), host(NULL), tor(NULL), fUseTestNet(false), fWipeBan(false), fWipeIgnore(false), ipv4_proxy(NULL), ipv6_proxy(NULL), magic(NULL) {}
 
   void ParseCommandLine(int argc, char **argv) {
-    static const char *help = "Bitcoin-seeder\n"
+    static const char *help = "Bitscript-seeder\n"
                               "Usage: %s -h <host> -n <ns> [-m <mbox>] [-t <threads>] [-p <port>]\n"
                               "\n"
                               "Options:\n"
@@ -467,9 +467,9 @@ extern "C" void* ThreadStats(void*) {
 
 static const string mainnet_seeds[] = {"seed.arede.site", ""};
 static const string testnet_seeds[] = {"testnet-seed.alexykot.me",
-                                       "testnet-seed.bitcoin.petertodd.org",
+                                       "testnet-seed.bitscript.petertodd.org",
                                        "testnet-seed.bluematt.me",
-                                       "testnet-seed.bitcoin.schildbach.de",
+                                       "testnet-seed.bitscript.schildbach.de",
                                        ""};
 static const string *seeds = mainnet_seeds;
 static vector<string> vSeeds;
